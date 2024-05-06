@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match</title>
+    <style>
+        @keyframes sajib {
+            50% {
+                margin-bottom: 700px;
+
+            }
+
+            100% {
+                margin-bottom: 120px;
+                margin-left: 1200px;
+            }
+        }
+
+        @keyframes six {
+            100% {
+                visibility: visible;
+            }
+        }
+
+        .bat-div {
+            background: tomato;
+            padding-left: 200px;
+            padding-top: 20px;
+            display: flex;
+            align-items: end;
+            height: 800px;
+        }
+
+        .bat {
+            transform: rotate(45deg);
+            transform-origin: 55% top;
+        }
+
+        .bat-div:hover .bat {
+            transform: rotate(-15deg);
+            transition-duration: 0.3s;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: aliceblue;
+            margin-left: -182px;
+            margin-bottom: 120px;
+
+
+        }
+
+        .bat-div:hover .ball {
+
+            animation: sajib 2s ease 0.3s 1 normal forwards;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bat-div">
+        <img width="700px" class="bat" src="/file (3).png" alt="">
+        <div class="ball">
+        </div>
+    </div>
+
+</body>
+
+</html>
